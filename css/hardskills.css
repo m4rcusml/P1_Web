@@ -1,0 +1,60 @@
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+    margin: 1em 0;
+}
+#hardskills {
+    display: flex;
+    min-height: 500px;
+    padding-bottom: 1em;
+    justify-content: space-around;
+    align-items: center;
+}
+#hardskills .imagem {
+    padding: .5em;
+    border-radius: 4px;
+    outline: solid 8px var(--cor2);
+    box-shadow: 0 0 40px var(--cor1);
+    width: 320px;
+    height: 400px;
+    overflow: hidden;
+    background-image: url('../imgs/megamente2.jpg');
+    background-position: top center;
+}
+#barras {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+}
+progress {
+    border-radius: 0;
+    width: 100%;
+}
+progress::-webkit-progress-bar {
+    background-color: var(--cor6);
+    opacity: .9;
+}
+progress::-webkit-progress-value {
+    padding: 10px;
+    transform: translateY(-3px);
+    background-color: var(--cor2);
+}
+
+@media screen and (max-width:740px) {
+    #hardskills {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width:375px) {
+    #hardskills .imagem {
+        width: 90%;
+    }
+}

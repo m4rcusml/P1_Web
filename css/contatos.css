@@ -1,0 +1,83 @@
+main {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main>* {
+    width: 35%;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+ul {
+    list-style: inside;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.redes-sociais {
+    /* flex-flow: row nowrap; */
+    gap: 1.3em;
+}
+
+aside {
+    height: 100px;
+    grid-template-rows: 1fr;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2em;
+    text-align: center;
+}
+
+input {
+    height: 35px;
+    width: 100%;
+    margin: .1em 0;
+    border-radius: 8px;
+    outline: none;
+    border: solid 2px var(--cor1);
+    background-color: var(--cor2);
+    /* color: white; */
+}
+
+button {
+    cursor: pointer;
+    height: 40px;
+    background-color: var(--cor6);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 200ms;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    color: black;
+}
+
+@media screen and (max-width:800px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    main>* {
+        min-width: 220px;
+        width: 80%;
+    }
+}

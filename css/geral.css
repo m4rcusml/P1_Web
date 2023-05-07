@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor1: #4b8564;
+  --cor2: #79bf83;
+  --cor3: #99e265;
+  --cor4: #dcffe2;
+  --cor5: #a53e4f;
+  --cor6: #0e2841;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+header {
+  background-color: var(--cor1);
+  min-height: 60px;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8);
+  padding: .5em;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.menu-item {
+  padding: .5em;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 200ms;
+}
+
+.menu-item:hover {
+  background-color: var(--cor2);
+}
+
+#selecionado {
+  color: var(--cor6);
+}
+
+aside {
+  min-height: 200px;
+  background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+  display: grid;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5vw;
+  row-gap: 1em;
+}
+
+footer {
+  background-color: var(--cor1);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor4);
+}
+
+@media screen and (max-width:600px) {
+  header {
+    height: 80px;
+    padding: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+  }
+
+  header>* {
+    flex-basis: 50%;
+  }
+
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu {
+    gap: 0;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .menu-item {
+    margin: auto;
+  }
+
+  aside {
+    min-height: 250px;
+  }
+  
+  .redes-sociais {
+    column-gap: 8vw;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .menu-item {
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width:250px) {
+  /*excluir*/
+}
