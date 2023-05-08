@@ -17,7 +17,7 @@
 }
 #projetos .item {
     box-shadow: 0 0 10px black;
-    max-width: 300px;
+    max-width: 350px;
     padding: .5em;
     border-radius: 8px;
     display: flex;
@@ -25,6 +25,9 @@
     gap: 1em;
     align-items: center;
     background-color: var(--cor1);
+    color: white;
+}
+a {
     color: white;
 }
 .item .imagem {
