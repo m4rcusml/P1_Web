@@ -12,7 +12,7 @@
     padding-bottom: 1em;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 1em;
 }
 #projetos .item {
