@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+.logo {
+  font-family: 'Expletus Sans', cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
